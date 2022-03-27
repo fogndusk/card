@@ -1,0 +1,68 @@
+body {
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    color: #f2f2f2;
+    background-color: #005;
+    min-height: 854px;
+    min-width: 480px;
+    background-image: url("images/sset2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section {
+    padding-top: 10px;
+}
+
+
+.container {
+    max-width: 1408px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+.page-section a {
+    position: relative;
+    margin-right: 64px;
+    padding-bottom: 10px;
+    padding-top: 9px;
+    font-weight: 500;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: inherit;
+  }
+
+.page-section a:focus,
+.page-section a:hover {
+  color: #f9dd79;
+}
+
+.page-section a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f9dd79;
+    transition: width 200ms;
+  }
+
+  .page-section a:hover::after {
+    width: 100%;
+  }
+
+  .section-phone {
+    padding-left: 21px;
+    background-image: url("images/icon-phone.svg");
+    
+  }
+
+  .section-phone:hover {
+    background-image: url("img/icon-phone-alt.svg");
+  }
+
+  .page-section a:active {
+    opacity: 0.5;
+  }
